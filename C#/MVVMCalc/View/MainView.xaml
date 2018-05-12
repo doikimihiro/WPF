@@ -6,9 +6,14 @@
         Width="300" 
         SizeToContent="Height"
         SnapsToDevicePixels="True">
+    <!--xmlns属性で名前空間を宣言　変数xに"http://schemas.microsoft.com/winfx/2006/xaml"(WPFの各種機能)を割り当てている-->
+    <!--x:Class 名前空間xに属する固有の機能を使う-->
+    <!--MVVM.Calc.Viewという名前空間にWindowを継承してMainViewというクラスを作っている-->
+    <!--xmlns属性で名前空間を宣言　変数vmに"clr-namespace:MVVMCalc.ViewModel"を割り当てている-->   
     <Window.DataContext>
         <vm:MainViewModel />
     </Window.DataContext>
+    <!--名前空間vm(のMainViewModel.csの中)に定義されているclass MainViewModelをDataContextにしている-->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto" />
@@ -28,6 +33,8 @@
 
         <!-- 入力項目 -->
         <TextBox Text="{Binding Path=Lhs, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" />
+        <!--Binding.UpdateSourceTrigger Gets or sets a value that determines the timing of binding source updates.-->
+        <!--これは(PropertyChanged)プロパティ(TextBoxのText)値が更新されたらすぐにBindingソースに反映するという指定です。-->
         <ComboBox ItemsSource="{Binding Path=CalculateTypes}" SelectedItem="{Binding Path=SelectedCalculateType}" SelectedIndex="0" Grid.Row="1" Grid.Column="1" />
         <TextBox Text="{Binding Path=Rhs, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="1" />
         <Button Content="計算実行" Command="{Binding Path=CalculateCommand}" Grid.Row="3" Grid.ColumnSpan="2" />

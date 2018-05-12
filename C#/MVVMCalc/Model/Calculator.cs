@@ -9,12 +9,13 @@
     public class Calculator
     {
         /// <summary>
-        /// 計算方法を表すCalculateTypeと実際の処理のマップ
+        /// 計算方法を表すCalculateTypeと実際の処理のマップ(CalculateType.csで定義されたCalculateTypeの演算子(?)と Calculator.csの実際の処理の対応)
         /// </summary>
         private static readonly Dictionary<CalculateType, Func<double, double, double>> calcMap = new Dictionary<CalculateType, Func<double, double, double>>
         {
+            //Func<T1,T2,TResult>型、T1型、T2型の引数を取りTResult型の返り値を返すメソッドを参照するデリゲートの型
             // 未指定
-            { 
+            {
                 CalculateType.None, 
                 (x, y) => 
                 {
