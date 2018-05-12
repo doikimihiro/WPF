@@ -1,0 +1,15 @@
+C:\Users\doi\WPF3\C#\MVVMCalc\bin\Debug\MVVMCalc.exe
+C:\Users\doi\WPF3\C#\MVVMCalc\bin\Debug\MVVMCalc.pdb
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\View\MainView.g.cs
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\App.g.cs
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc_MarkupCompile.cache
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc_MarkupCompile.lref
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\App.baml
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\View\MainView.baml
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc.g.resources
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc.Properties.Resources.resources
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc.csproj.GenerateResource.Cache
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc.csproj.CoreCompileInputs.cache
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc.exe
+C:\Users\doi\WPF3\C#\MVVMCalc\obj\x86\Debug\MVVMCalc.pdb
