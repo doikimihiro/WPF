@@ -8,6 +8,19 @@
     /// <summary>
     /// CalculateType構造体表示用ViewModel
     /// </summary>
+    /// 
+    /*
+     MVVMパターンでViewModelを実装する場合、INotifyPropertyChanged インターフェースを実装するのが面倒という理由もあって、
+     INotifyPropertyChanged インターフェースを実装した抽象クラス「 ViewModelBase 」を用意したりすることが、
+     世の中的に割と定番となっている
+     ViewModel は INotifyPropertyChanged インターフェイスを実装したもの
+     */
+    /*
+       まず、計算方法を表すCalculateType列挙子を表すためのViewModelクラスを作成します。
+       このViewModelクラスは、CalculateTypeの値と選択項目に表示する文字列の対応づけを行います。
+       ここでは内部的にCalculateTypeとstringの対応をDictionaryで管理してEnumのメソッドを使用して
+       CalculateTypeの値を全て取得してCalculateTypeViewModelを作成するヘルパーメソッドも作成しています。
+     */
     public class CalculateTypeViewModel : ViewModelBase
     {
         /// <summary>

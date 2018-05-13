@@ -8,6 +8,17 @@
     /// <summary>
     /// MainViewのViewModel
     /// </summary>
+    /// 
+    /*
+        次に、このアプリケーションで一番の働き者であるMainViewModelクラスを作成します。
+        このクラスはMainView(Window)のDataContextに設定されMainViewからのイベントへの応答や、
+        MainViewへの表示に必要なデータを提供します。
+        MainViewには、TextBoxが2個とComboBoxが１つとTextBlockが１つあるので、
+        それに対応するプロパティを作成します。
+        また計算方法は、ComboBoxからの選択になるので、現在選択されている項目を知るためのプロパティも作成します。
+        そのプロパティには値の変更があったことをViewに通知するためにPropertyChangedイベントの発行を行うようにします。
+     */
+
     public class MainViewModel : ViewModelBase
     {
         private double lhs;

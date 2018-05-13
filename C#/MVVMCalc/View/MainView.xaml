@@ -39,5 +39,6 @@
         <TextBox Text="{Binding Path=Rhs, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="1" />
         <Button Content="計算実行" Command="{Binding Path=CalculateCommand}" Grid.Row="3" Grid.ColumnSpan="2" />
         <TextBlock Text="{Binding Path=Answer}" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
+        <!--MainViewModel.csに対してデータバインディング-->
     </Grid>
 </Window>
